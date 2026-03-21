@@ -1,4 +1,4 @@
-import { site } from '../content/siteContent'
+import { site } from "../content/siteContent";
 
 export function AboutSection() {
   return (
@@ -9,9 +9,10 @@ export function AboutSection() {
             Sobre nós
           </h2>
           <p>
-            A <strong>{site.name}</strong> apoia particulares em{' '}
+            A <strong>{site.name}</strong> apoia particulares em{" "}
             <strong>{site.area}</strong> com remodelações, pinturas, montagens e
-            reparações domésticas — desde projetos maiores até pequenos arranjos.
+            reparações domésticas — desde projetos maiores até pequenos
+            arranjos.
           </p>
           <p>
             O objetivo é simplificar: explicar o que fazemos, responder de forma
@@ -25,5 +26,5 @@ export function AboutSection() {
         </div>
       </div>
     </section>
-  )
+  );
 }
