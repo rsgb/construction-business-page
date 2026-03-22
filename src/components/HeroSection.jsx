@@ -17,9 +17,29 @@ export function HeroSection() {
 
   return (
     <section id="inicio" className="hero" aria-labelledby="hero-title">
-      <div className="hero__bg" aria-hidden="true" />
-      <div className="container hero__layout">
-        <div className="hero__column hero__column--text">
+      <div className="hero__picture" aria-hidden="true">
+        {heroSlides.map((s, idx) => (
+          <img
+            key={s.imageUrl}
+            src={s.imageUrl}
+            alt=""
+            width={960}
+            height={720}
+            loading={idx === 0 ? 'eager' : 'lazy'}
+            decoding="async"
+            className={
+              idx === i
+                ? 'hero__picture-img hero__picture-img--visible'
+                : 'hero__picture-img'
+            }
+          />
+        ))}
+      </div>
+      <div className="container hero__split">
+        <div className="hero__copy">
+          <p id="hero-photo-desc" className="visually-hidden" aria-live="polite">
+            {slide.imageAlt}
+          </p>
           <p className="hero__eyebrow">{site.area}</p>
           <h1 id="hero-title" className="hero__title">
             {site.name}
@@ -57,21 +77,6 @@ export function HeroSection() {
               Pedir orçamento
             </a>
           </div>
-        </div>
-
-        <div className="hero__column hero__column--visual">
-          <figure className="hero__figure">
-            <img
-              key={slide.imageUrl}
-              src={slide.imageUrl}
-              alt={slide.imageAlt}
-              width={960}
-              height={720}
-              loading={i === 0 ? 'eager' : 'lazy'}
-              decoding="async"
-              className="hero__img"
-            />
-          </figure>
         </div>
       </div>
     </section>
