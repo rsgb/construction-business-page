@@ -503,19 +503,27 @@ a:hover {
     -webkit-mask-image: linear-gradient(
       to right,
       transparent 0%,
-      rgba(0, 0, 0, 0.35) 32%,
-      rgba(0, 0, 0, 0.85) 48%,
-      #000 62%,
+      rgba(0, 0, 0, 0.06) 42%,
+      rgba(0, 0, 0, 0.22) 55%,
+      rgba(0, 0, 0, 0.55) 68%,
+      rgba(0, 0, 0, 0.92) 82%,
+      #000 92%,
       #000 100%
     );
     mask-image: linear-gradient(
       to right,
       transparent 0%,
-      rgba(0, 0, 0, 0.35) 32%,
-      rgba(0, 0, 0, 0.85) 48%,
-      #000 62%,
+      rgba(0, 0, 0, 0.06) 42%,
+      rgba(0, 0, 0, 0.22) 55%,
+      rgba(0, 0, 0, 0.55) 68%,
+      rgba(0, 0, 0, 0.92) 82%,
+      #000 92%,
       #000 100%
     );
+  }
+
+  .hero__picture-img {
+    object-position: 92% center;
   }
 
   .hero__split {
